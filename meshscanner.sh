@@ -11,7 +11,6 @@ echo -e "${WHITE}-------------------------------------------------"
 
 read -p "Enter the subnet to scan (e.g., 192.168.1.0/24): " subnet
 
-# Scan all IP addresses in the given subnet using fping and show only reachable ones
 fping -a -g $subnet/24 2>/dev/null
 
 echo -e "${RED}Happy scanning!${NC}"
